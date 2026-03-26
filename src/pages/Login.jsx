@@ -28,7 +28,6 @@ export default function Login() {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setForm((prev) => ({ ...prev, [name]: value }));
-    // Clear error on change
     if (errors[name]) setErrors((prev) => ({ ...prev, [name]: '' }));
   };
 
@@ -40,7 +39,6 @@ export default function Login() {
       return;
     }
     setLoading(true);
-    // Simulate async auth
     setTimeout(() => {
       localStorage.setItem('auth_token', 'mock_token_' + Date.now());
       localStorage.setItem('user_email', form.email);
