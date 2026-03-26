@@ -73,3 +73,8 @@ src/
 - Authentication is mocked — any valid email + 6-char password grants access
 - Product data is fetched fresh on each dashboard mount (no caching)
 - "Jewellery" is the display spelling used for the `jewelery` API category
+
+## Deployed Link
+
+- `https://dashboard-assignment-dusky.vercel.app/login`
+
